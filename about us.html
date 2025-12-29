@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>about us</title>
+
+    <style>
+       body
+    {
+         margin: 0%;
+         background-color:rgb(193, 238, 193);
+        background-image: url("bgimg.webp");
+         background-size: cover;
+        box-sizing: content-box;
+        background-repeat: no-repeat;
+    }
+    .container1
+        {
+            display: flex;
+            height: 100vh;
+        }
+.left
+    {
+        flex: 1;
+        background:none;
+        color:white;
+        padding:60px;
+    }
+.right
+    {
+        margin-top: 100px;
+        flex: 0.5;
+        background: none;
+        display: flex;
+        justify-content:flex-start;
+        align-items:flex-start;
+    }
+form{
+    width:300px;
+    height: 100px;
+}
+form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+button{
+    width: 70%;
+    padding:10px;
+    background-color:green;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background: lime;
+}
+        header
+        {
+            background-color:gray;
+            font-weight: 300;
+            font-size: larger;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: green;
+            padding:10px;
+            text-align:left;
+
+        }
+.header{
+            display: flex;
+            align-items:right;
+            justify-content: space-between;
+            padding: 10px 10px;
+        }
+        .logo1{
+            width:100px;
+            height:100px;
+        }
+        
+     
+  .nav
+        {
+            display: flex;
+            justify-content: space-between;          
+            background-color:rgb(211, 205, 205);
+            color:goldenrod;
+            padding:10px;
+            align-items: center;
+            
+        }
+        .logo
+        {
+            color:red;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .nav-links{
+            list-style:none;
+            display: flex;
+        }
+        .nav-links li{
+            margin-left:25px;
+        }
+        .nav-links a{
+            color:red;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover
+        {
+            color: red;
+            margin:0 15px;
+            text-decoration: none;
+            font-weight: bolder;
+
+        }
+         .container{
+                display:flex;
+                flex-direction: column;
+                gap:40px;
+                margin-top: 10px;
+            }
+            .box{
+                flex:3;
+            }
+            .box img{
+                width:200px;
+                height: 150px;
+                border-radius: 10px;
+            }
+            .section-title{
+                text-align:center;
+                font-size:500px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                font-weight:bolder;
+            }
+            .image-row{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap:20px;
+                padding:10px;
+            }
+            .image-row img{
+                width:200px;
+                height:300px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+            .animation{
+                width:100%;
+                position: relative;
+            }
+         
+            .animate{
+                font-size: 40px;
+             font-weight: bold;
+             white-space: nowrap;
+             position: absolute;
+             animation:movetext 8s linear infinite,colorChange 2s infinite;
+            }
+            @keyframes movetext{
+                0%{
+                    right:-100%;
+                }
+                100%{
+                    right:100%;
+                }
+            }
+            @keyframes colorChange{
+                0%{color:red
+                }
+                25%{
+                    color:black;
+
+                }
+                50%{
+                    color:rgb(7, 69, 7);
+                }
+                75%{
+                    color:blue;
+                }
+                100%{
+                    color:red;
+                }
+            }
+        </style>
+        </head>
+        <body>
+            <header class="header">
+               <h1 class="color-text">Capital Garden Center</h1>
+                <img src="capital garden logo1.webp" alt="logo1" class="logo1">
+            </header>
+            <nav class="nav">
+                <div class="logo"></div>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                <li><a href="indoor plants.html">Indoor plants</a></li>
+                <li><a href="outdoor plants.html">Outdoor plant</a></li>
+                
+                </ul>
+            </nav>
+            
+            
+            <div class="animation">
+            <p class="animate"> Our accomplishments are a result of hard work,
+                        team sprit and determination
+            </p></div>
+            <div class="container1">
+                <div class="left">
+                    <h1>VISIT US</h1>
+                    <p>New vilangudi,<br>
+                    near ROYAL school<br>
+                Madurai-18</p>
+                    <h1>CALL US</h1>
+                    <p>capitalgardennursury@gmail.com<br>
+                    PH:9988775544</p>
+                    <h1>EMAIL US</h1>
+                    <p>Business@capitalgarden.in</p>
+                </div>
+                <div class="right">
+                    <form>
+                        <h2>Contact us</h2>
+                    
+                    <input type="text" placeholder="NAME" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="text" placeholder="Comments" required>
+                    <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        
+       
+            <footer>
+                <a href="#">About us</a>
+                <p>Thanks for choosing me</p>
+            </footer>
+        </body>
+        </html>
+        </body>
